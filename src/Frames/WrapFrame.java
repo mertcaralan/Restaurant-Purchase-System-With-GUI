@@ -110,7 +110,7 @@ public class WrapFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnVeganWrap,size, txtCount.getText(),250);
+				purchase(btnVeganWrap,size, txtCount.getText(),150);
 			}
 		});
 		btnVeganWrap.setBounds(10, 119, 466, 76);
@@ -129,7 +129,7 @@ public class WrapFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnChickenWrap,size, txtCount.getText(),250);
+				purchase(btnChickenWrap,size, txtCount.getText(),140);
 			}
 		});
 		btnChickenWrap.setBounds(10, 205, 466, 76);
@@ -148,7 +148,7 @@ public class WrapFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnMeatWrap,size, txtCount.getText(),250);
+				purchase(btnMeatWrap,size, txtCount.getText(),200);
 			}
 		});
 		btnMeatWrap.setBounds(10, 291, 466, 76);
@@ -167,7 +167,7 @@ public class WrapFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnCeasarWrap,size, txtCount.getText(),250);
+				purchase(btnCeasarWrap,size, txtCount.getText(),185);
 			}
 		});
 		btnCeasarWrap.setBounds(10, 377, 466, 76);
