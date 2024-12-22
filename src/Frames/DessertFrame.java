@@ -140,7 +140,7 @@ public class DessertFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnIcecream,size, lblEnter.getText(),250);
+				purchase(btnIcecream,size, lblEnter.getText(),70);
 			}
 		});
 		btnIcecream.setFont(new Font("Arial", Font.BOLD, 20));
@@ -159,7 +159,7 @@ public class DessertFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnDubai,size, txtCount.getText(),250);
+				purchase(btnDubai,size, txtCount.getText(),450);
 			}
 		});
 		btnDubai.setFont(new Font("Arial", Font.BOLD, 20));
@@ -178,7 +178,7 @@ public class DessertFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnDonut,size, txtCount.getText(),250);
+				purchase(btnDonut,size, txtCount.getText(),100);
 			}
 		});
 		btnDonut.setFont(new Font("Arial", Font.BOLD, 20));
@@ -197,7 +197,7 @@ public class DessertFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnBaklava,size, txtCount.getText(),250);
+				purchase(btnBaklava,size, txtCount.getText(),240);
 			}
 		});
 		btnBaklava.setFont(new Font("Arial", Font.BOLD, 20));
