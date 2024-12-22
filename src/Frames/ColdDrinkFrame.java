@@ -108,7 +108,7 @@ public class ColdDrinkFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnCola,size, txtCount.getText(),250);
+				purchase(btnCola,size, txtCount.getText(),40);
 			}
 		});
 		btnCola.setFont(new Font("Arial", Font.BOLD, 20));
@@ -127,7 +127,7 @@ public class ColdDrinkFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnFanta,size, txtCount.getText(),250);
+				purchase(btnFanta,size, txtCount.getText(),40);
 			}
 		});
 		btnFanta.setFont(new Font("Arial", Font.BOLD, 20));
@@ -146,7 +146,7 @@ public class ColdDrinkFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnSprite,size, txtCount.getText(),250);
+				purchase(btnSprite,size, txtCount.getText(),40);
 			}
 		});
 		btnSprite.setFont(new Font("Arial", Font.BOLD, 20));
@@ -165,7 +165,7 @@ public class ColdDrinkFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnIcetea,size, txtCount.getText(),250);
+				purchase(btnIcetea,size, txtCount.getText(),40);
 			}
 		});
 		btnIcetea.setFont(new Font("Arial", Font.BOLD, 20));
