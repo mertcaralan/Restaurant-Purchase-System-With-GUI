@@ -124,7 +124,7 @@ public class BurgerFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnCheeseburger,size, txtCount.getText(),250);
+				purchase(btnCheeseburger,size, txtCount.getText(),240);
 			}
 		});
 		btnCheeseburger.setBackground(new Color(192, 192, 192));
@@ -143,7 +143,7 @@ public class BurgerFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnFishburger,size, txtCount.getText(),250);
+				purchase(btnFishburger,size, txtCount.getText(),300);
 			}
 		});
 		btnFishburger.setBackground(new Color(192, 192, 192));
@@ -162,7 +162,7 @@ public class BurgerFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnChickenburger,size, txtCount.getText(),250);
+				purchase(btnChickenburger,size, txtCount.getText(),210);
 			}
 		});
 		btnChickenburger.setBackground(new Color(192, 192, 192));
