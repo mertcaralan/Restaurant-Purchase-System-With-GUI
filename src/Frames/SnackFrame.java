@@ -110,7 +110,7 @@ public class SnackFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnFrenchfries,size, txtCount.getText(),250);
+				purchase(btnFrenchfries,size, txtCount.getText(),50);
 			}
 		});
 		btnFrenchfries.setFont(new Font("Arial", Font.BOLD, 20));
@@ -129,7 +129,7 @@ public class SnackFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnNuggets,size, txtCount.getText(),250);
+				purchase(btnNuggets,size, txtCount.getText(),80);
 			}
 		});
 		btnNuggets.setFont(new Font("Arial", Font.BOLD, 20));
@@ -148,7 +148,7 @@ public class SnackFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnStrips,size, txtCount.getText(),250);
+				purchase(btnStrips,size, txtCount.getText(),80);
 			}
 		});
 		btnStrips.setFont(new Font("Arial", Font.BOLD, 20));
@@ -167,7 +167,7 @@ public class SnackFrame extends JFrame {
 				}else if(rdbtnL.isSelected()) {
 					size = "L";
 				}
-				purchase(btnOnionrings,size, txtCount.getText(),250);
+				purchase(btnOnionrings,size, txtCount.getText(),70);
 			}
 		});
 		btnOnionrings.setFont(new Font("Arial", Font.BOLD, 20));
