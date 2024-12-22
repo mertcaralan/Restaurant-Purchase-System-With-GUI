@@ -1,6 +1,7 @@
 package Frames;
 import SQL.*;
 import Classes.*;
+import Main.OrderSys;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -135,47 +136,33 @@ public class RegistrationFrame {
     }
 
     private void registerUser() {
-    // Get user input from fields
-    String name = nameField.getText();
-    String email = emailField.getText();
-    String password = new String(passwordField.getPassword());
-    String address = addressField.getText();
-    String sex = sexField.getText();
-    int day = Integer.parseInt(dayField.getText());
-    int month = Integer.parseInt(monthField.getText());
-    int year = Integer.parseInt(yearField.getText());
+        try {
+            String name = nameField.getText();
+            String email = emailField.getText();
+            String password = new String(passwordField.getPassword());
+            String address = addressField.getText();
+            String sex = sexField.getText();
+            int day = Integer.parseInt(dayField.getText());
+            int month = Integer.parseInt(monthField.getText());
+            int year = Integer.parseInt(yearField.getText());
 
-    int customerID = new Random().nextInt(10000); // Generate a random ID
+            Customer newCustomer = new Customer();
+            newCustomer.set_NameSurname(name);
+            newCustomer.set_email(email);
+            newCustomer.set_password(password);
+            newCustomer.setAddress(address);
+            newCustomer.setSex(sex);
+            newCustomer.setDayBirth(day);
+            newCustomer.setMonthBirth(month);
+            newCustomer.setYearBirth(year);
 
-    // Save to database
-    try (Connection conn = DataBaseConnection.getConnection()) {
-        String sql = "INSERT INTO CUSTOMERJ (CUSTOMERID, NAMESURNAME, LOGIN_PASSWORD, EMAIL, ADDRESS, SEX, BIRTH_DAY, BIRTH_MONTH, BIRTH_YEAR) " +
-                     "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            OrderSys.customer = newCustomer;
 
-        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            pstmt.setInt(1, customerID);
-            pstmt.setString(2, name);
-            pstmt.setString(3, password);
-            pstmt.setString(4, email);
-            pstmt.setString(5, address);
-            pstmt.setString(6, sex);
-            pstmt.setInt(7, day);
-            pstmt.setInt(8, month);
-            pstmt.setInt(9, year);
-
-            int rowsInserted = pstmt.executeUpdate();
-            if (rowsInserted > 0) {
-                JOptionPane.showMessageDialog(frame, "Registration Succeeded! Your ID: " + customerID);
-                controller.showMainFrame(); // Navigate to MainFrame
-            } else {
-                JOptionPane.showMessageDialog(frame, "Registration Failed!");
-            }
+            controller.showOrderFrame();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(frame, "Error: " + e.getMessage());
         }
-    } catch (SQLException e) {
-        e.printStackTrace();
-        JOptionPane.showMessageDialog(frame, "Database Error: " + e.getMessage());
     }
-}
 
 
     public void setVisible(boolean visible) {

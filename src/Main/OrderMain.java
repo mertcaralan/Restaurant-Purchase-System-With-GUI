@@ -1,8 +1,6 @@
 package Main;
-import java.awt.EventQueue;
-import java.util.Scanner;
-
 import Frames.AppController;
+import java.awt.EventQueue;
 
 public class OrderMain {
     public static void main(String[] args) {
@@ -10,7 +8,7 @@ public class OrderMain {
     	EventQueue.invokeLater(() -> {
           try {
               AppController controller = new AppController();
-              controller.showOrderFrame();
+              controller.showRegistrationFrame();
           } catch (Exception e) {
               e.printStackTrace();
           }

@@ -2,13 +2,12 @@ package Main;
 
 import Classes.*;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class OrderSys {
     public static ArrayList<Order> orders = new ArrayList<>();
     public static int totalCount = 0;
     public static double totalPrice = 0;
-    public static Customer customer = new Customer();
+    public static Customer customer;
     
     public static void addOrder(String name,String size,int counter,double price) {
 	        
