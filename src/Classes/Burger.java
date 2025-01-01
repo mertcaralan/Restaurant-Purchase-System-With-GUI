@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Burger extends Food{
 
-	private int burgerChoice;
-
 	public Burger(String name,String size,int counter,double price) {
 		super(name,size,counter,price);
 	}

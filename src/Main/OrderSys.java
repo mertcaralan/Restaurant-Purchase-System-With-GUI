@@ -4,6 +4,7 @@ import Classes.*;
 import java.util.ArrayList;
 
 public class OrderSys {
+	
     public static ArrayList<Order> orders = new ArrayList<>();
     public static int totalCount = 0;
     public static double totalPrice = 0;
@@ -125,10 +126,15 @@ public class OrderSys {
     }
     
     public static String[] getOrderIDsAsArray(){
+
     	String[] ids = new String[orders.size()];
+
     	for(int i=0; i<ids.length; i++) {
+
     		ids[i] = orders.get(i).getOrderID() + "";
+
     	}
+
     	return ids;
     }
 }

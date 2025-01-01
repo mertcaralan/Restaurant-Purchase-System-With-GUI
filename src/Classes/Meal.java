@@ -3,12 +3,12 @@ package Classes;
 import java.util.Scanner;
 
 public abstract class Meal {
+
     private String name;
     private String size;
     private int counter;
     private double price;
-    private int itemID;
-
+    
     public Meal() {
     	this.name = "No Name";
         this.size = "No Size";
@@ -26,7 +26,6 @@ public abstract class Meal {
     // Abstract method to be implemented by subclasses
     public abstract String getDescription();
 
-    // Getters and setters for name
     public String getName() {
         return this.name;
     }
@@ -35,7 +34,6 @@ public abstract class Meal {
         this.name = name;
     }
 
-    // Getters and setters for size
     public String getSize() {
         return this.size;
     }
@@ -44,7 +42,6 @@ public abstract class Meal {
         this.size = size;
     }
 
-    // Getters and setters for counter
     public int getCounter() {
         return this.counter;
     }
@@ -53,7 +50,6 @@ public abstract class Meal {
         this.counter++;
     }
 
-    // Getters and setters for price
     public double getPrice() {
         return this.price;
     }
@@ -62,16 +58,6 @@ public abstract class Meal {
         this.price = price;
     }
 
-    // Getters and setters for itemID
-    public int getItemID() {
-        return this.itemID;
-    }
-
-    public void setItemID(int itemID) {
-        this.itemID = itemID;
-    }
-
-    // toString
     @Override
     public String toString() {
         return "\nSize = " + this.size +

@@ -3,15 +3,16 @@ package Classes;
 import java.util.Scanner;
 
 public class Customer {
+	
 	private int customerID;
+
 	private String NameSurname;
 	private String email;
 	private String password;
 	private String address;
-	private String sex;
-	private int day;
-	private int month;
-	private int year;
+	private String gender;
+
+	private int day,month,year;
 	
 	public Customer() {
         this.customerID = generateRandomID();
@@ -23,37 +24,37 @@ public class Customer {
         return (int) (Math.random() * (max - min + 1)) + min;
     }
 
-	public int get_customerID()
+	public int getCustomerID()
 	{
 		return customerID;
 	}
 
-	public String get_NameSurname()
+	public String getNameSurname()
 	{
 		return NameSurname;
 	}
 	
-	public void set_NameSurname(String NameSurname)
+	public void setNameSurname(String NameSurname)
 	{
 		this.NameSurname = NameSurname;
 	}
 	
-	public String get_email()
+	public String getEmail()
 	{
 		return email;
 	}
 	
-	public void set_email(String email)
+	public void setEmail(String email)
 	{
 		this.email = email;
 	}
 
-	public String get_password()
+	public String getPassword()
 	{
 		return password;
 	}
 	
-	public void set_password(String password)
+	public void setPassword(String password)
 	{
 		this.password = password;
 	}
@@ -66,94 +67,37 @@ public class Customer {
         this.address = address;
     }
 
-    public String getSex() {
+    public String getGender() {
         return sex;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
-    public int get_daybirth() {
+    public int getBirthDay() {
         return day;
     }
 
-    public void setDayBirth(int day) {
+    public void setBirthDay(int day) {
         this.day = day;
     }
 
-    public int getMonthBirth() {
+    public int getBirthMonth() {
         return month;
     }
 
-    public void setMonthBirth(int month) {
+    public void setBirthMonth(int month) {
         this.month = month;
     }
 
-    public int getYearBirth() {
+    public int getBirthYear() {
         return year;
     }
 
-    public void setYearBirth(int year) {
+    public void setBirthYear(int year) {
         this.year = year;
     }
-
-	
-	public void getInput()
-	{
-		Scanner scanner = new Scanner(System.in);
-
-		System.out.println("Enter your name and surname: ");
-		NameSurname = scanner.nextLine();
-		System.out.println("Enter your email:");
-		email = scanner.nextLine();
-		System.out.println("Enter your address:");
-		address = scanner.nextLine();
-
-
-		while (true) {
-			System.out.println("Enter your sex (M/F):");
-			sex = scanner.nextLine().toUpperCase(); 
-			if (sex.equals("M") || sex.equals("F")) {
-				break; 
-			} else {
-				System.out.println("Invalid input. Please enter M or F.");
-			}
-		}
-
-		// Validate day (1-31)
-		while (true) {
-			System.out.println("Enter your day of birth (1-31):");
-			day = scanner.nextInt();
-			if (day >= 1 && day <= 31) {
-				break; 
-			} else {
-				System.out.println("Invalid day. Please enter a number between 1 and 31.");
-			}
-		}
-
-
-		while (true) {
-			System.out.println("Enter your month of birth (1-12):");
-			month = scanner.nextInt();
-			if (month >= 1 && month <= 12) {
-				break; // Exit loop if valid input
-			} else {
-				System.out.println("Invalid month. Please enter a number between 1 and 12.");
-			}
-		}
-
-
-		while (true) {
-			System.out.println("Enter your year of birth (e.g., 1990):");
-			year = scanner.nextInt();
-			if (String.valueOf(year).length() == 4) {
-				break; 
-			} else {
-				System.out.println("Invalid year. Please enter a 4-digit year.");
-			}
-		}
-	}
 
 	@Override
 	public String toString() {

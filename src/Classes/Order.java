@@ -2,6 +2,7 @@ package Classes;
 import java.util.ArrayList;
 
 public class Order {
+    
     private Customer customer;
     private ArrayList<Meal> meals;
     private double orderPrice;

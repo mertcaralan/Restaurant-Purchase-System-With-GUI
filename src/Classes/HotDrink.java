@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class HotDrink extends Drink{
 	
-	private int hotDrinkChoice;
-	
 	public HotDrink(String name,String size,int counter,double price) {
 		super(name,size,counter,price);
 	}

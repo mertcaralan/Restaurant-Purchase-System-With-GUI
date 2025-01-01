@@ -3,7 +3,6 @@ package Classes;
 import java.util.Scanner;
 
 public class Sauce extends Meal{
-	private int sauceChoice;
 
 	public Sauce(String name,String size,int counter,double price) {
 		super(name,size,counter,price);
