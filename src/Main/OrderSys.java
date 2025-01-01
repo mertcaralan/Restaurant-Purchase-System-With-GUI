@@ -74,7 +74,7 @@ public class OrderSys {
     public static String displayOrders() {
 	    StringBuffer text = new StringBuffer();
 	    
-	    text.append("\nWelcome ").append(customer.get_NameSurname()).append(" !\n");
+	    text.append("\nWelcome ").append(customer.getNameSurname()).append(" !\n");
 	    text.append("Total Orders: ").append(orders.size()).append("\n");
 	    text.append("======================================\n");
 	
@@ -126,13 +126,10 @@ public class OrderSys {
     }
     
     public static String[] getOrderIDsAsArray(){
-
     	String[] ids = new String[orders.size()];
 
     	for(int i=0; i<ids.length; i++) {
-
     		ids[i] = orders.get(i).getOrderID() + "";
-
     	}
 
     	return ids;
