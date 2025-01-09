@@ -1,79 +1,129 @@
 # Restaurant Purchase System with GUI
 
-Welcome to the **Restaurant Purchase System with GUI**! This project is designed to streamline the process of managing restaurant purchases through a user-friendly graphical interface built using Java and JFrame.
+Welcome to the **Restaurant Purchase System with GUI**! This project provides a streamlined and feature-rich platform for managing restaurant orders and purchases, all through an intuitive graphical user interface (GUI) built using Java and JFrame.
 
-## 🌟 Project Overview
-The **Restaurant Purchase System with GUI** provides a comprehensive platform for restaurants to manage their orders and purchases efficiently. With its intuitive design and robust functionality, the system ensures seamless operation for both restaurant staff and management.
+## ✨ Project Overview
+The **Restaurant Purchase System with GUI** is designed to efficiently manage a restaurant’s operations, allowing users to:
+- Place and manage orders.
+- Track purchases and calculate total costs.
+- Manage a dynamic inventory system integrated into the application.
+
+This application combines robust functionality with an easy-to-use GUI to enhance the experience for both restaurant staff and customers.
 
 ## 🎯 Key Features
-- **Menu Management**: Easily add, update, or remove menu items with real-time updates.
-- **Order Processing**: Allow users to place orders, calculate totals, and track purchases.
-- **Inventory Management**: Automatically adjust inventory levels based on orders.
-- **User-Friendly GUI**: Intuitive interface developed using JFrame for enhanced usability.
-- **Error Handling**: Robust validation and error handling to ensure data integrity.
+- **Dynamic Menu Options**: Users can browse and manage categories such as Burgers, Snacks, Wraps, Drinks, and Desserts.  
+- **Order Management**: Process orders with real-time calculations, including discounts.  
+- **Inventory Updates**: Inventory levels automatically adjust based on processed orders.  
+- **User Login and Registration**: Secure login and registration system to ensure user data is protected.  
+- **Discount Implementation**: Flexible discount logic applied dynamically during order processing.  
+- **Modular and Expandable Design**: Built with extensibility in mind, allowing easy addition of new features.  
+- **Error Handling**: Validations and robust error handling for a seamless experience.  
 
 ## 🔧 Technologies Used
-- **Programming Language**: Java (JDK 17+ recommended)
-- **GUI Framework**: JFrame
-- **Development Tools**: IntelliJ IDEA / Eclipse / NetBeans (any preferred IDE)
-- **Version Control**: Git
+- **Programming Language**: Java (JDK 17+ recommended)  
+- **GUI Framework**: JFrame  
+- **Design Patterns**: Object-oriented programming principles, interfaces, and modular design.  
+- **Development Tools**: Eclipse
+- **Version Control**: Git  
 
 ## 🚀 Getting Started
 Follow the steps below to set up and run the project on your local machine.
 
 ### Prerequisites
-- Install Java Development Kit (JDK 17 or higher).
-- Install an IDE like IntelliJ IDEA, Eclipse, or NetBeans.
-- Ensure Git is installed for version control.
+- Java Development Kit (JDK 17 or higher).  
+- An IDE like IntelliJ IDEA, Eclipse, or NetBeans.  
+- Git for version control.  
 
 ### Installation
-1. Clone the repository to your local machine:
+1. Clone the repository:  
    ```bash
    git clone https://github.com/your-username/Restaurant-Purchase-System-With-GUI.git
    ```
-2. Open the project in your preferred IDE.
-3. Build the project to resolve dependencies.
-4. Run the `Main.java` file to start the application.
+2. Open the project in your preferred IDE.  
+3. Build the project to resolve dependencies.  
+4. Run the `OrderMain.java` file to start the application.  
 
 ## 🖥️ How to Use
-1. **Launch the Application**: Open the project in your IDE and run the main class.
-2. **Navigate the Menu**: Use the intuitive GUI to browse the restaurant's menu and make selections.
-3. **Place Orders**: Select menu items, enter quantities, and confirm purchases.
-4. **Review Purchase Details**: View order summaries, including total costs.
-5. **Manage Inventory**: Update stock levels directly from the GUI.
+1. **Launch the Application**: Start the app by running the `OrderMain.java` file.  
+2. **Login/Registration**: Begin by logging in or registering as a user.  
+3. **Browse Categories**: Navigate through various menu categories, including Burgers, Drinks, Desserts, and more.  
+4. **Place Orders**: Select items, enter quantities, and confirm purchases.  
+5. **Track Totals and Discounts**: View the order summary, including total costs and applied discounts.  
+6. **Complete Purchase**: Finalize the order and review inventory adjustments.  
+
+## 📂 Project Structure
+The project follows a modular structure for easier maintenance and scalability:  
+```
+├── src
+│   ├── Classes
+│   │   ├── Burger.java
+│   │   ├── ColdDrink.java
+│   │   ├── Customer.java
+│   │   ├── Dessert.java
+│   │   ├── Drink.java
+│   │   ├── Food.java
+│   │   ├── HotDrink.java
+│   │   ├── Meal.java
+│   │   ├── Order.java
+│   │   ├── Sauce.java
+│   │   ├── Snack.java
+│   │   ├── TotalDiscount.java
+│   │   ├── Wrap.java
+│   ├── Frames
+│   │   ├── AppController.java
+│   │   ├── BurgerFrame.java
+│   │   ├── ColdDrinkFrame.java
+│   │   ├── CompleteFrame.java
+│   │   ├── DessertFrame.java
+│   │   ├── DrinkFrame.java
+│   │   ├── FoodFrame.java
+│   │   ├── HotDrinkFrame.java
+│   │   ├── LoginFrame.java
+│   │   ├── MainFrame.java
+│   │   ├── OrderFrame.java
+│   │   ├── PurchaseFrame.java
+│   │   ├── RegistrationFrame.java
+│   │   ├── SauceFrame.java
+│   │   ├── SnackFrame.java
+│   │   ├── WrapFrame.java
+│   ├── Interfaces
+│   │   ├── Discount.java
+│   ├── Main
+│       ├── OrderMain.java
+│       ├── OrderSys.java
+```
+
+### Key Files
+- **`OrderMain.java`**: The main entry point of the application.  
+- **`Customer.java`**: Handles customer-related functionalities.  
+- **`Order.java`**: Manages the order-processing logic.  
+- **`Discount.java`**: Interface for applying various discounts.  
+- **GUI Files**: Frames for each functionality, such as `BurgerFrame.java`, `LoginFrame.java`, and `CompleteFrame.java`.  
 
 ## 📸 Screenshots
 
-## 🛠️ Project Structure
-- **src**: Contains all source code files.
-  - `Main.java`: Entry point of the application.
-  - `Menu.java`: Handles menu-related functionalities.
-  - `Order.java`: Manages order processing logic.
-  - `GUI.java`: Handles the graphical user interface.
-- **resources**: Contains any assets such as images or configuration files.
-- **README.md**: Documentation for the project.
-
 ## 📚 Learning Outcomes
-This project helped me enhance my skills in:
-- Object-oriented programming (OOP) principles in Java.
-- GUI development using JFrame.
-- Structuring and managing a Java project efficiently.
-- Implementing error handling and validation mechanisms.
+This project helped me enhance my skills in:  
+- Developing modular and object-oriented Java applications.  
+- Designing intuitive GUIs using JFrame.  
+- Managing and organizing a large-scale project with multiple components.  
+- Implementing real-time data validation and error handling mechanisms.  
 
 ## 🤝 Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch (`feature-branch-name`).
-3. Commit your changes and push to your branch.
-4. Open a pull request.
+Contributions are welcome!  
+1. Fork the repository.  
+2. Create a feature branch: `feature-branch-name`.  
+3. Commit your changes and push to the branch.  
+4. Open a pull request.  
 
-## 📬 Contact
-If you have any questions or suggestions, feel free to reach out:
-- **Name**: Mert Çaralan
-- **Email**: mert.caralan@outlook.com
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-- **GitHub**: [[Your GitHub Profile](https://github.com/your-username)](https://github.com/mertcaralan)
+## 📩 Contact
+For questions, suggestions, or collaboration opportunities, feel free to reach out:  
+- **Name**: Ahmet Mert Çaralan  
+- **Email**: mert.caralan@outlook.com  
+- **LinkedIn**: [linkedin.com/in/mertcaralan](https://linkedin.com/in/mertcaralan)  
+- **GitHub**: [github.com/mertcaralan](https://github.com/mertcaralan)  
 
 ---
 
-Thank you for exploring the **Restaurant Purchase System with GUI**! I look forward to any feedback or collaboration opportunities. 😊
+Thank you for exploring the **Restaurant Purchase System with GUI**! I look forward to your feedback and collaboration. 😊
+
